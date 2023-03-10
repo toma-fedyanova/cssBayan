@@ -1,0 +1,78 @@
+@keyframes animation-size{ 
+  0% {   background-position: 50% 45%;
+         background-repeat: no-repeat;
+         background-size: 300px;
+         background-image: var(--url);
+   }
+  100% {
+    background-position: 50% 45%;
+    background-repeat: no-repeat;
+    background-size: 350px;
+  
+    background-image: var(--url);
+   }
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 3.6rem;
+  color: blue;
+  font-family: 'Mukta', sans-serif;
+  font-style: bold;
+  background-color: rgb(241, 238, 230);
+}
+.wrapper {
+  max-width: 1600px;
+  margin: auto;
+}
+.wrapper:hover {
+  color: black;
+}
+h1 {
+  color: #717171;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+}
+.block {
+  display: flex;
+  transition: all 0.3s ease-out;
+}
+summary {
+  width: 100%;
+  list-style: none;
+  padding-left: 30px;
+}
+.summary:hover{
+  --url: url('https://usagif.com/wp-content/uploads/gifs/cute-bunny-gif-6.gif');
+  animation: animation-size 2s;
+  animation-fill-mode: forwards;
+  height: 450px;
+}
+details[open] > .summary,
+details[open] > .summary1 {
+  animation: none;
+  height: auto;
+  color: black;
+}
+.img {
+  padding-left: 32%;
+}
+.meme {
+  display: block;
+  width: 350px;
+}
+.summary1:hover{
+  --url: url('https://a.d-cd.net/44694d2s-960.jpg');
+  animation: animation-size 2s;
+  animation-fill-mode: forwards;
+  height: 450px;
+}
