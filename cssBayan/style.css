@@ -1,15 +1,14 @@
 @keyframes animation-size{ 
-  0% {   background-position: 50% 45%;
+  0% {   background-position: 45% 45%;
          background-repeat: no-repeat;
          background-size: 300px;
          background-image: var(--url);
    }
   100% {
-    background-position: 50% 45%;
-    background-repeat: no-repeat;
-    background-size: 350px;
-  
-    background-image: var(--url);
+          background-position: 41% 52%;
+          background-repeat: no-repeat;
+          background-size: 350px;
+          background-image: var(--url);
    }
 }
 * {
@@ -58,7 +57,10 @@ summary {
   height: 450px;
 }
 details[open] > .summary,
-details[open] > .summary1 {
+details[open] > .summary1, 
+details[open] > .summary2, 
+details[open] > .summary3, 
+details[open] > .summary4 {
   animation: none;
   height: auto;
   color: black;
@@ -72,6 +74,24 @@ details[open] > .summary1 {
 }
 .summary1:hover{
   --url: url('https://a.d-cd.net/44694d2s-960.jpg');
+  animation: animation-size 2s;
+  animation-fill-mode: forwards;
+  height: 420px;
+}
+.summary2:hover{
+  --url: url('memes/acegif-com-sweating-91.gif');
+  animation: animation-size 2s;
+  animation-fill-mode: forwards;
+  height: 450px;
+}
+.summary3:hover{
+  --url: url('memes/16-sheriff-car-dancing-acegif.gif');
+  animation: animation-size 2s;
+  animation-fill-mode: forwards;
+  height: 450px;
+}
+.summary4:hover{
+  --url: url('memes/coche-payaso-6-happy-flying-circus-car-usagif.gif');
   animation: animation-size 2s;
   animation-fill-mode: forwards;
   height: 450px;
