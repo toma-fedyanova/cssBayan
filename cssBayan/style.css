@@ -138,13 +138,13 @@ a,
 
 @media (min-width: 1920px) {
   @keyframes animation-size{ 
-    0% {   background-position: 45% 45%;
+    0% {   background-position: 50% 45%;
            background-repeat: no-repeat;
            background-size: 300px;
            background-image: var(--url);
      }
     100% {
-            background-position: 48% 55%;
+            background-position: 52% 55%;
             background-repeat: no-repeat;
             background-size: 350px;
             background-image: var(--url);
@@ -239,7 +239,7 @@ a,
     cursor: pointer;
   }
   .img {
-    padding-left: 37%;
+    padding-left: 40%;
   }
   .img:active {
     animation: blur 0.1s;
