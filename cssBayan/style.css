@@ -144,7 +144,7 @@ a,
            background-image: var(--url);
      }
     100% {
-            background-position: 45% 55%;
+            background-position: 48% 55%;
             background-repeat: no-repeat;
             background-size: 350px;
             background-image: var(--url);
@@ -194,7 +194,7 @@ a,
   font-size: 4.5rem;
   line-height: 5rem;
 }
-details[open] > .summary:focus,
+  details[open] > .summary:active,
   details[open] > .summary1:active, 
   details[open] > .summary2:active, 
   details[open] > .summary3:active, 
@@ -239,7 +239,7 @@ details[open] > .summary:focus,
     cursor: pointer;
   }
   .img {
-    padding-left: 34%;
+    padding-left: 37%;
   }
   .img:active {
     animation: blur 0.1s;
